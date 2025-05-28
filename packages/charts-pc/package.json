@@ -1,0 +1,35 @@
+{
+  "name": "sz-charts",
+  "version": "0.0.0",
+  "description": "charts storybook",
+  "homepage": "",
+  "license": "ISC",
+  "main": "./lib/index.umd.js",
+  "module": "./lib/index.es.js",
+  "types": "./lib/react/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "tsc": "tsc --pretty --noEmit",
+    "tsc-build": "tsc -b",
+    "build": "npm run tsc && npm run tsc-build && rm -rf lib && vite build"
+  },
+  "dependencies": {
+    "lodash": "^4.14.191",
+    "echarts-wordcloud": "^2.0.0",
+    "resize-observer-polyfill": "^1.5.1"
+  },
+  "peerDependencies": {
+    "@types/lodash": "^4.14.191",
+    "resize-observer-polyfill": "^1.5.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "@types/lodash": "^4.14.191"
+  }
+}

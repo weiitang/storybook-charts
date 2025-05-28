@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint --fix",
     "preview": "vite preview",
     "storybook": "cd /storybook && npm run storybook",
     "prepare": "husky"

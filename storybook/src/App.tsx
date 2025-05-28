@@ -1,5 +1,5 @@
 // import { Bar } from '../../packages/charts-pc/react';
-import { Bar } from 'sz-charts';
+// import { Bar } from 'sz-charts';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
       <div style={{ width: '600px', height: '400px' }}>
-        <Bar
+        {/* <Bar
           data={{
             dataset: {
               source: [
@@ -43,7 +43,7 @@ function App() {
               ],
             },
           }}
-        ></Bar>
+        ></Bar> */}
       </div>
     </>
   );

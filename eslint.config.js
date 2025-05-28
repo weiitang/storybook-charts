@@ -7,7 +7,7 @@ import prettierPlugin from 'eslint-plugin-prettier';
 import prettierConfig from 'eslint-config-prettier';
 
 export default tseslint.config(
-  { ignores: ['**/dist/**', '**/lib/**'] },
+  { ignores: ['**/dist/**', '**/lib/**', '**/storybook-static/**'] },
   {
     extends: [
       js.configs.recommended,

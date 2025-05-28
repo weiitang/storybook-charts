@@ -22,9 +22,6 @@
     "storybook": "^8.6.14",
     "vitest": "^3.1.4"
   },
-  "dependencies": {
-    "sz-charts": "file:../packages/charts-pc"
-  },
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended"

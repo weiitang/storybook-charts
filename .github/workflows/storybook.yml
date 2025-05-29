@@ -1,0 +1,69 @@
+# Sample workflow for building and deploying to GitHub Pages
+name: Deploy Storybok Charts site to Pages
+
+on:
+  push:
+    branches: ['master']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Get Version
+        run: node -v && npm -v && npm config get registry
+
+      - name: Clean node_modules and locks
+        run: |
+          rm -rf node_modules
+          rm -f yarn.lock pnpm-lock.yaml package-lock.json
+
+      - name: Install dependencies
+        run: |
+          # npm install --verbose
+          npm install
+          # ls -la node_modules # Verify `node_modules` exists
+
+      # - name: Verify Next.js installation
+      #   run: |
+      #     if [ ! -f node_modules/.bin/next ]; then
+      #       echo "Next.js is not installed. Please check your package.json.";
+      #       exit 1;
+      #     fi
+
+      - name: Build with Storybook
+        run: npm run build:storybook
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./storybook/storybook-static
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

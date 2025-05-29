@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/react-vite';
+import path from 'path';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.@(js|jsx|mjs|ts|tsx)', '../src/**/*.mdx'],
@@ -21,7 +22,7 @@ const config: StorybookConfig = {
       ...c,
       resolve: {
         alias: {
-          '@charts': '../../packages/charts-pc/react',
+          '@charts': path.resolve(__dirname, '../../packages/charts-pc/react'),
         },
       },
     };

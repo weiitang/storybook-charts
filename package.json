@@ -14,7 +14,7 @@
     "preview": "vite preview",
     "start": "cd storybook && npm run dev",
     "build:storybook": "cd storybook && npm run build",
-    "prepare": "husky"
+    "prepare": "husky && echo 'install all dependencies' && cd packages/charts-pc && npm i && cd ../../storybook && npm i"
   },
   "dependencies": {
     "react": "^19.1.0",

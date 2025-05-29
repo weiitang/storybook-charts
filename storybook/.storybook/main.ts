@@ -15,8 +15,10 @@ const config: StorybookConfig = {
   core: {
     builder: '@storybook/builder-vite',
   },
-  viteFinal() {
+  // 需要将默认配置结构...c，不然只配置了resolve会导致cors(因为vite默认允许跨域)
+  async viteFinal(c) {
     return {
+      ...c,
       resolve: {
         alias: {
           '@charts': '../../packages/charts-pc/react',

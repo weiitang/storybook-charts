@@ -12,8 +12,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint --fix",
     "preview": "vite preview",
-    "start": "cd /storybook && npm run dev",
-    "build:storybook": "cd /storybook && npm run build",
+    "start": "cd storybook && npm run dev",
+    "build:storybook": "cd storybook && npm run build",
     "prepare": "husky"
   },
   "dependencies": {

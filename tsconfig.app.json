@@ -20,7 +20,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@charts": ["./packages/charts-pc/react"]
+    }
   },
   "include": ["storybook", "packages"],
   "exclude": ["node_modules"]

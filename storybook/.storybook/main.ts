@@ -15,5 +15,14 @@ const config: StorybookConfig = {
   core: {
     builder: '@storybook/builder-vite',
   },
+  viteFinal() {
+    return {
+      resolve: {
+        alias: {
+          '@charts': '../../packages/charts-pc/react',
+        },
+      },
+    };
+  },
 };
 export default config;

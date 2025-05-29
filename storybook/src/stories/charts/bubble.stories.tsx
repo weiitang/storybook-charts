@@ -1,9 +1,10 @@
-import { Bubble } from '../../../../packages/charts-pc/react';
+import { Bubble } from '@charts';
 import type { Meta, StoryObj } from '@storybook/react';
 import './chart.css';
 
 export default {
   title: 'Charts/Bubble',
+  tags: ['autodocs'],
   component: (args) => (
     <div className="charts">
       <Bubble {...args} />

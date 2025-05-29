@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-import { Bar, BarChartsProps } from '../../../../packages/charts-pc/react';
+import { Bar, BarChartsProps } from '@charts';
 import './chart.css';
 
 const meta = {

@@ -4,7 +4,7 @@ import { Bar, BarChartsProps } from '@charts';
 import './chart.css';
 
 const meta = {
-  title: 'Charts/Bar',
+  title: 'Charts/Bar 条形图',
   tags: ['autodocs'],
   component: (args) => (
     <div className="charts">

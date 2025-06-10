@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import './chart.css';
 
 export default {
-  title: 'Charts/Bubble',
+  title: 'Charts/Bubble 气泡图',
   tags: ['autodocs'],
   component: (args) => (
     <div className="charts">

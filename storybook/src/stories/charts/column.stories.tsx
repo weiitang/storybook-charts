@@ -4,7 +4,7 @@ import './chart.css';
 
 type Story = StoryObj<typeof Column>;
 
-const chartTemplate = (args) => (
+const ChartTemplate = (args) => (
   <div className="charts">
     <Column {...args} />
   </div>
@@ -12,7 +12,8 @@ const chartTemplate = (args) => (
 
 export default {
   title: 'Charts/Column 柱状图',
-  component: Column,
+  tags: ['autodocs'],
+  component: ChartTemplate,
 } satisfies Meta<typeof Column>;
 
 // BasicColumn（柱状图）
@@ -30,7 +31,6 @@ export const BasicColumn: Story = {
       ],
     },
   },
-  render: chartTemplate,
 };
 
 // GroupedColumn（分组柱状图）
@@ -60,7 +60,6 @@ export const GroupedColumn: Story = {
         },
       ],
     },
-    render: chartTemplate,
   },
 };
 
@@ -88,7 +87,6 @@ export const StackedColumn: Story = {
       ],
     },
   },
-  render: chartTemplate,
 };
 
 // PercentageColumn（百分比的柱状图）
@@ -119,7 +117,6 @@ export const PercentageColumn: Story = {
       ],
     },
   },
-  render: chartTemplate,
 };
 
 // ZoomColumn（支持数据缩放）
@@ -180,7 +177,6 @@ export const ZoomColumn: Story = {
     },
     dataZoom: true,
   },
-  render: chartTemplate,
 };
 
 // RotateColumn（横轴label旋转）

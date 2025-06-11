@@ -5,6 +5,7 @@ import './chart.css';
 
 export default {
   title: 'Charts/Line 折线图',
+  tags: ['autodocs'],
   component: Line,
 } satisfies Meta<typeof Line>;
 type Story = StoryObj<typeof Line>;

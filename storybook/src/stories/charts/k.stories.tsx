@@ -4,6 +4,7 @@ import './chart.css';
 
 export default {
   title: 'Charts/Candlestick K线图',
+  tags: ['autodocs'],
   argTypes: {
     showLoading: {
       options: [true, false],

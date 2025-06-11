@@ -6,5 +6,6 @@ export { Funnel } from './charts/funnel';
 export { Heat } from './charts/heat';
 export { K } from './charts/k';
 export { Line } from './charts/line';
+export { Geo } from './charts/map';
 
 export * from '../core/types';

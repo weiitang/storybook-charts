@@ -9,5 +9,6 @@ export { Line } from './charts/line';
 export { Geo } from './charts/map';
 export { Pie } from './charts/pie';
 export { Scatter } from './charts/scatter';
+export { TreeMap } from './charts/treeMap';
 
 export * from '../core/types';

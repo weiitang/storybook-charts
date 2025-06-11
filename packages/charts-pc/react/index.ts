@@ -5,5 +5,6 @@ export { Force } from './charts/force';
 export { Funnel } from './charts/funnel';
 export { Heat } from './charts/heat';
 export { K } from './charts/k';
+export { Line } from './charts/line';
 
 export * from '../core/types';

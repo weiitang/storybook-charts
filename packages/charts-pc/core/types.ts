@@ -40,7 +40,7 @@ export type Opts = {
   readonly locale?: string;
 };
 
-export type MAChartsProps = {
+export type ChartsProps = {
   /**
    * 图表容器的`className`
    */
@@ -91,8 +91,8 @@ export type MAChartsProps = {
    * 控制是否更新图表配置
    */
   readonly shouldSetOption?: (
-    prevProps: MAChartsProps,
-    props: MAChartsProps
+    prevProps: ChartsProps,
+    props: ChartsProps
   ) => boolean;
   /**
    * window resize 时是否自动resize图表
@@ -104,7 +104,7 @@ export type MAChartsProps = {
 /**
  * Line
  */
-export interface LineChartsProps extends MAChartsProps {
+export interface LineChartsProps extends ChartsProps {
   /**
    * 传入的数据，包含Echarts的相应系列的options
    */
@@ -140,7 +140,7 @@ export interface LineChartsProps extends MAChartsProps {
 /**
  * Column
  */
-export interface ColumnChartsProps extends MAChartsProps {
+export interface ColumnChartsProps extends ChartsProps {
   /**
    * 传入的数据，包含Echarts的相应系列的options
    */
@@ -164,7 +164,7 @@ export interface ColumnChartsProps extends MAChartsProps {
 /**
  * Bar
  */
-export interface BarChartsProps extends MAChartsProps {
+export interface BarChartsProps extends ChartsProps {
   /** 传入的数据，包含Echarts的相应系列的options */
   data: echarts.ComposeOption<
     | BarSeriesOption
@@ -180,7 +180,7 @@ export interface BarChartsProps extends MAChartsProps {
 /**
  * Pie
  */
-export interface PieChartsProps extends MAChartsProps {
+export interface PieChartsProps extends ChartsProps {
   /**
    * 包含Echarts的相应系列的options
    */
@@ -196,7 +196,7 @@ export interface PieChartsProps extends MAChartsProps {
 /**
  * K
  */
-export interface KChartsProps extends MAChartsProps {
+export interface KChartsProps extends ChartsProps {
   /**
    * 包含Echarts的相应系列的options
    */
@@ -212,7 +212,7 @@ export interface KChartsProps extends MAChartsProps {
 /**
  * Scatter
  */
-export interface ScatterChartsProps extends MAChartsProps {
+export interface ScatterChartsProps extends ChartsProps {
   /**
    * 包含Echarts的相应系列的options
    */
@@ -228,7 +228,7 @@ export interface ScatterChartsProps extends MAChartsProps {
 /**
  * Bubble
  */
-export interface BubbleChartsProps extends MAChartsProps {
+export interface BubbleChartsProps extends ChartsProps {
   /**
    * 包含Echarts的相应系列的options
    */
@@ -244,7 +244,7 @@ export interface BubbleChartsProps extends MAChartsProps {
 /**
  * GeoMap
  */
-export interface GeoMapChartsProps extends MAChartsProps {
+export interface GeoMapChartsProps extends ChartsProps {
   /**
    * 传入的数据，包含Echarts的所有options
    */
@@ -264,7 +264,7 @@ export interface GeoMapChartsProps extends MAChartsProps {
 /**
  * TreeMap
  */
-export interface TreeMapChartsProps extends MAChartsProps {
+export interface TreeMapChartsProps extends ChartsProps {
   /**
    * 传入的数据，包含Echarts的所有options
    */
@@ -274,7 +274,7 @@ export interface TreeMapChartsProps extends MAChartsProps {
 /**
  * Force
  */
-export interface ForceChartsProps extends MAChartsProps {
+export interface ForceChartsProps extends ChartsProps {
   /**
    * 传入的数据，包含Echarts的所有options
    */
@@ -284,7 +284,7 @@ export interface ForceChartsProps extends MAChartsProps {
 /**
  * WordCloud
  */
-// export interface WordCloudChartsProps extends MAChartsProps {
+// export interface WordCloudChartsProps extends ChartsProps {
 //   /**
 //    * 传入的数据，包含Echarts的所有options
 //    */
@@ -295,7 +295,7 @@ export interface ForceChartsProps extends MAChartsProps {
  * Funnel
  */
 
-export interface FunnelChartsProps extends MAChartsProps {
+export interface FunnelChartsProps extends ChartsProps {
   /**
    * 包含Echarts的相应系列的options
    */
@@ -318,7 +318,7 @@ export interface FunnelChartsProps extends MAChartsProps {
  * HeatMap
  */
 
-export interface HeatChartsProps extends MAChartsProps {
+export interface HeatChartsProps extends ChartsProps {
   /**
    * 包含Echarts的相应系列的options
    */

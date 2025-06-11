@@ -2,10 +2,10 @@ import React, { PureComponent } from 'react';
 import * as echarts from 'echarts/core';
 import ResizeObserver from 'resize-observer-polyfill';
 import { pick, isFunction, isString, isEqual } from 'lodash';
-import type { MAChartsProps } from '../core/types';
+import type { ChartsProps } from '../core/types';
 import type { EChartOption, EChartsLoadingOption } from 'echarts/lib/echarts';
 
-interface ChartProps extends MAChartsProps {
+interface ChartProps extends ChartsProps {
   /**
    * echarts 配置项
    */
@@ -45,7 +45,7 @@ class Chart extends PureComponent<ChartProps> {
   }
 
   // update
-  componentDidUpdate(prevProps: MAChartsProps) {
+  componentDidUpdate(prevProps: ChartsProps) {
     /**
      * if shouldSetOption return false, then return, not update echarts options
      * default is true
@@ -189,7 +189,7 @@ class Chart extends PureComponent<ChartProps> {
   }
 
   // bind the events
-  private bindEvents(instance, events: MAChartsProps['onEvents']) {
+  private bindEvents(instance, events: ChartsProps['onEvents']) {
     function _bindEvent(eventName: string, func: Function) {
       // ignore the event config which not satisfy
       if (isString(eventName) && isFunction(func)) {

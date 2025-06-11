@@ -14,7 +14,7 @@ import type {
   HeatmapSeriesOption,
 } from 'echarts/charts';
 
-// import type { WordCloudSeriesOption } from 'echarts/types/dist/echarts';
+import type { WordCloudSeriesOption } from 'echarts/types/dist/echarts';
 
 import type {
   TitleComponentOption,
@@ -284,12 +284,12 @@ export interface ForceChartsProps extends ChartsProps {
 /**
  * WordCloud
  */
-// export interface WordCloudChartsProps extends ChartsProps {
-//   /**
-//    * 传入的数据，包含Echarts的所有options
-//    */
-//   data: echarts.ComposeOption<TooltipComponentOption | WordCloudSeriesOption>;
-// }
+export interface WordCloudChartsProps extends ChartsProps {
+  /**
+   * 传入的数据，包含Echarts的所有options
+   */
+  data: echarts.ComposeOption<TooltipComponentOption | WordCloudSeriesOption>;
+}
 
 /**
  * Funnel

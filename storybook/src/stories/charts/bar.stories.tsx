@@ -3,21 +3,26 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Bar, BarChartsProps } from '@charts';
 import './chart.css';
 
+// storybook根据export出来的component自动生成props，下面定义的组件会被meta里的component顺序掉，所以props生成的有问题
+const BarChartTemplate = (props: BarChartsProps) => (
+  <div className="charts">
+    <Bar {...props} />
+  </div>
+);
+
 const meta = {
   title: 'Charts/Bar 条形图',
   tags: ['autodocs'],
-  component: (args) => (
-    <div className="charts">
-      <Bar {...args} />
-    </div>
-  ),
+  component: Bar,
 } satisfies Meta<typeof Bar>;
 
 export default meta;
 type Story = StoryObj<typeof Bar>;
 
 // BasicBar（条形图）
-export const BasicBar: Story = {};
+export const BasicBar: Story = {
+  render: BarChartTemplate,
+};
 BasicBar.args = {
   data: {
     dataset: {
@@ -40,7 +45,9 @@ BasicBar.args = {
 BasicBar.storyName = 'BasicBar（条形图）';
 
 // GroupedBar（分组条形图）
-export const GroupedBar: Story = {};
+export const GroupedBar: Story = {
+  render: BarChartTemplate,
+};
 GroupedBar.args = {
   data: {
     yAxis: {
@@ -68,7 +75,9 @@ GroupedBar.args = {
 GroupedBar.storyName = 'GroupedBar（分组条形图）';
 
 // StackedBar（堆叠条形图）
-export const StackedBar: Story = {};
+export const StackedBar: Story = {
+  render: BarChartTemplate,
+};
 StackedBar.args = {
   data: {
     yAxis: {
@@ -107,7 +116,9 @@ StackedBar.args = {
 StackedBar.storyName = 'StackedBar（堆叠条形图）';
 
 // PercentageBar（百分比的条形图）
-export const PercentageBar: Story = {};
+export const PercentageBar: Story = {
+  render: BarChartTemplate,
+};
 PercentageBar.args = {
   data: {
     xAxis: {

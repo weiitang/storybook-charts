@@ -1,10 +1,10 @@
-import { Column } from '@charts';
+import { Column, ColumnChartsProps } from '@charts';
 import type { Meta, StoryObj } from '@storybook/react';
 import './chart.css';
 
 type Story = StoryObj<typeof Column>;
 
-const ChartTemplate = (args) => (
+const ColumnChartTemplate = (args: ColumnChartsProps) => (
   <div className="charts">
     <Column {...args} />
   </div>
@@ -12,8 +12,8 @@ const ChartTemplate = (args) => (
 
 export default {
   title: 'Charts/Column 柱状图',
-  tags: ['autodocs'],
-  component: ChartTemplate,
+  tags: ['autodocs'], // 这里自动生成docs，需要下面的component设置成当前组件，props里的type才会显示出来文档，不然storybook会取args里的作为文档
+  component: Column,
 } satisfies Meta<typeof Column>;
 
 // BasicColumn（柱状图）
@@ -31,6 +31,7 @@ export const BasicColumn: Story = {
       ],
     },
   },
+  render: ColumnChartTemplate,
 };
 
 // GroupedColumn（分组柱状图）
@@ -61,6 +62,7 @@ export const GroupedColumn: Story = {
       ],
     },
   },
+  render: ColumnChartTemplate,
 };
 
 // StackedColumn（堆叠柱状图）
@@ -87,6 +89,7 @@ export const StackedColumn: Story = {
       ],
     },
   },
+  render: ColumnChartTemplate,
 };
 
 // PercentageColumn（百分比的柱状图）
@@ -117,6 +120,7 @@ export const PercentageColumn: Story = {
       ],
     },
   },
+  render: ColumnChartTemplate,
 };
 
 // ZoomColumn（支持数据缩放）
@@ -177,6 +181,7 @@ export const ZoomColumn: Story = {
     },
     dataZoom: true,
   },
+  render: ColumnChartTemplate,
 };
 
 // RotateColumn（横轴label旋转）

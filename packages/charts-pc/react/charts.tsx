@@ -263,7 +263,7 @@ class Chart extends PureComponent<ChartProps> {
           this.ele = e;
         }}
         style={newStyle}
-        className={`ma-charts ${className}`}
+        className={className}
       />
     );
   }

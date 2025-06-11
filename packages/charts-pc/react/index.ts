@@ -7,5 +7,6 @@ export { Heat } from './charts/heat';
 export { K } from './charts/k';
 export { Line } from './charts/line';
 export { Geo } from './charts/map';
+export { Pie } from './charts/pie';
 
 export * from '../core/types';

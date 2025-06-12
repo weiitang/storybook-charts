@@ -1,6 +1,6 @@
 import { Bubble, BubbleChartsProps } from '@charts';
 import type { Meta, StoryObj } from '@storybook/react';
-import './chart.css';
+import '../chart.css';
 
 export default {
   title: 'Charts/Bubble 气泡图',

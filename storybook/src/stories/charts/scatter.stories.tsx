@@ -1,6 +1,6 @@
 import { Scatter, ScatterChartsProps } from '@charts';
 import type { Meta, StoryObj } from '@storybook/react';
-import './chart.css';
+import '../chart.css';
 
 export default {
   title: 'Charts/Scatter 散点图',

@@ -1,6 +1,6 @@
 import { Pie, PieChartsProps } from '@charts';
 import type { Meta, StoryObj } from '@storybook/react';
-import './chart.css';
+import '../chart.css';
 
 export default {
   title: 'Charts/Pie 饼图',

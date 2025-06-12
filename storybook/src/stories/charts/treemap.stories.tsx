@@ -2,7 +2,7 @@ import { TreeMap, EChartsInstance, TreeMapChartsProps } from '@charts';
 import type { Meta } from '@storybook/react';
 import icon from './../assets/chevron-right.svg';
 import iconWhite from './../assets/chevron-right-white.svg';
-import './chart.css';
+import '../chart.css';
 
 export default {
   title: 'Charts/TreeMap 矩形树图',

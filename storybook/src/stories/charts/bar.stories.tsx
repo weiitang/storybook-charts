@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Bar, BarChartsProps } from '@charts';
-import './chart.css';
+import '../chart.css';
 
 // storybook根据export出来的component自动生成props，下面定义的组件会被meta里的component顺序掉，所以props生成的有问题
 const BarChartTemplate = (props: BarChartsProps) => (

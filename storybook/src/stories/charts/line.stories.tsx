@@ -1,7 +1,7 @@
 import React from 'react';
 import { Line, LineChartsProps, EChartsInstance } from '@charts';
 import type { Meta, StoryObj } from '@storybook/react';
-import './chart.css';
+import '../chart.css';
 
 export default {
   title: 'Charts/Line 折线图',

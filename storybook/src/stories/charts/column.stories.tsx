@@ -1,6 +1,6 @@
 import { Column, ColumnChartsProps } from '@charts';
 import type { Meta, StoryObj } from '@storybook/react';
-import './chart.css';
+import '../chart.css';
 
 type Story = StoryObj<typeof Column>;
 

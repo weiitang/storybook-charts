@@ -1,6 +1,6 @@
 import { Funnel, FunnelChartsProps } from '@charts';
 import type { Meta, StoryObj } from '@storybook/react';
-import './chart.css';
+import '../chart.css';
 
 const FunnelChartTemplate = ({ ...rest }: FunnelChartsProps) => {
   return (

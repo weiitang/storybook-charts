@@ -18,7 +18,10 @@
   },
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "lodash": "^4.14.191",
+    "echarts-wordcloud": "^2.0.0",
+    "resize-observer-polyfill": "^1.5.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
@@ -28,6 +31,7 @@
     "@vitejs/plugin-react": "^4.4.1",
     "@vitest/browser": "^3.1.4",
     "@vitest/coverage-v8": "^3.1.4",
+    "@types/lodash": "^4.14.191",
     "eslint": "^9.25.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.6",

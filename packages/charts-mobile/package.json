@@ -1,11 +1,10 @@
 {
-  "name": "sz-charts",
+  "name": "sz-charts-mobile",
   "version": "0.0.0",
-  "description": "charts storybook",
+  "description": "mobile charts storybook",
   "homepage": "",
   "license": "ISC",
-  "main": "./lib/index.umd.js",
-  "module": "./lib/index.es.js",
+  "main": "./lib/index.js",
   "types": "./lib/react/index.d.ts",
   "directories": {
     "lib": "lib",
@@ -15,9 +14,8 @@
     "lib"
   ],
   "scripts": {
-    "tsc": "tsc --pretty --noEmit",
-    "tsc-build": "tsc -b",
-    "build": "npm run tsc && npm run tsc-build && rm -rf lib && vite build"
+    "build": "webpack --config config/webpack.prod.config.js",
+    "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "peerDependencies": {
     "@types/lodash": "^4.14.191",

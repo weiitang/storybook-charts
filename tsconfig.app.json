@@ -22,7 +22,8 @@
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@charts": ["./packages/charts-pc/react"]
+      "@charts": ["./packages/charts-pc/react"],
+      "@charts-mobile": ["./packages/charts-mobile/react"]
     }
   },
   "include": ["storybook", "packages"],

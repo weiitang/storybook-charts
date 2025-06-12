@@ -23,6 +23,10 @@ const config: StorybookConfig = {
       resolve: {
         alias: {
           '@charts': path.resolve(__dirname, '../../packages/charts-pc/react'),
+          '@charts-mobile': path.resolve(
+            __dirname,
+            '../../packages/charts-mobile/react'
+          ),
         },
       },
     };

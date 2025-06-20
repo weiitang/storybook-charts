@@ -5,9 +5,10 @@
     // "declarationDir": "./lib/react", // 声明文件输出目录（与插件配置保持一致）
     // "emitDeclarationOnly": true, // 仅生成声明文件
     "rootDir": "./", // 指定源码根目录
-    "outDir": "./lib", // 输出目录（需与 Vite 一致）
+    "outDir": "./lib", // 输出目录
     "esModuleInterop": true, // @types/react19以上，需要export=导入，这里简化下
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "noEmit": false
   },
   "include": ["./core", "./react"],
   "exclude": ["node_modules", "dist", "lib"]

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Chart } from '../chart';
 import { Model } from '../../core/charts/bar';
 

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="32" viewBox="0 0 160 32" fill="none" preserveAspectRatio="xMinYMid meet">
+  <!-- 放大后的GitHub风格字母头像 -->
+  <defs>
+    <linearGradient id="githubGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#41D1FF"/> 
+      <stop offset="100%" stop-color="#BD34FE"/>
+    </linearGradient>
+  </defs>
+  <circle cx="16" cy="16" r="14" fill="url(#githubGradient)"/>  <!-- 半径扩大40% -->
+  <text x="16" y="20" text-anchor="middle" fill="white" font-family="Arial" font-size="14" font-weight="bold">S</text>
+
+  <!-- Storybook斜切分隔符（尺寸同步放大） -->
+  <path fill="#FF4785" d="M36 8L42 26H30L36 8Z" opacity="0.8"/>
+
+  <!-- 放大后的文字标签 -->
+  <text x="54" y="22" fill="#333" font-family="Arial" font-size="18" font-weight="600">Charts</text>
+</svg>

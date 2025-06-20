@@ -8,6 +8,17 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    options: {
+      storySort: {
+        order: [
+          'Charts',
+          'Charts-Mobile',
+          'Charts-Mini',
+          'EXAMPLE',
+          'Configure your project',
+        ],
+      },
+    },
   },
 };
 
